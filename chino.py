@@ -206,5 +206,6 @@ class ImageGenerator(commands.Cog):
 # Run bot
 bot.add_cog(VCC())
 bot.add_cog(ImageGenerator())
+bot.add_cog(TextComs())
 
 bot.run(TOKEN)
