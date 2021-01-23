@@ -1,3 +1,4 @@
 discord.py
 romkan
 discord.py[voice]
+python-dotenv

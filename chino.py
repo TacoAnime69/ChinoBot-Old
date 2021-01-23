@@ -1,13 +1,17 @@
 import discord
 from discord.ext import commands
+from dotenv import load_dotenv
 import random
 import os
 import time
 import json
 
-bot = commands.Bot(command_prefix='$')
+# Load Environment Variables
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
 
-# Debug and Events
+# Set CMD Prefix
+bot = commands.Bot(command_prefix='$')
 
 
 @bot.event
@@ -203,4 +207,4 @@ class ImageGenerator(commands.Cog):
 bot.add_cog(VCC())
 bot.add_cog(ImageGenerator())
 
-bot.run('Nzk3NzI4ODIwNzg1NDQ2OTEy.X_qs2w.Sx5NXndBmr_vOlOcExZ4U2NAldg')
+bot.run(TOKEN)
