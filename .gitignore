@@ -1,0 +1,6 @@
+.vscode/
+Audio/*
+Pictures/*
+*.wav
+*.ogg
+*.png
