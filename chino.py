@@ -76,8 +76,6 @@ async def about(ctx, args):
     embed.add_field(name="Personality",
                     value=data[args]['Personality'], inline=False)
     await ctx.send(embed=embed)
-    # await ctx.send('Sorry, I don\'t know that one ｡ﾟ･ (>﹏<) ･ﾟ｡')
-    # await ctx.send('Args: {}. Url: {}'.format(args, characters[args]['url']))
 
 
 # VC Commands
