@@ -63,7 +63,7 @@
         "haircolor": "Brunette",
         "eyecolor": "Green",
         "height": "157cm",
-        "blood": "-",
+        "blood": "O",
         "appear": "Chiya has long, straightened dark brown hair vaguely reminiscent of a hime cut, but with the forelocks longer and shaped differently. On the side of her head she wears a flower ornament with a ribbon. She has fair skin and green downward curving eyes.  Normally Chiya wears her work outfit, which is a dark green kimono with vertical stripes and a long white frilly apron over it.",
         "Personality": "A gentle and calming young girl, Chiya is formal and soft-spoken. She always appears to be in a light, airy mood and focuses on keeping the peace, although she can be a little air-headed. Even when she might be upset, she always keeps smiling.  Despite her ladylike behavior, Chiya has many surprising quirks one may not see at first. She finds pleasure in giving the sweets of Ama Usa An overly fancy names, such as \"Red Jewel in a Snowy Field\" and \"Moon and Stars Reflected Upon the Sea\". She also enjoys scary stories and disturbing others at times, and she dreams of becoming a samurai. She is genuinely kind, but at times she can be very teasing. "
     },
@@ -80,7 +80,7 @@
         "haircolor": "Blonde",
         "eyecolor": "Teal",
         "height": "151cm",
-        "blood": "-",
+        "blood": "A",
         "appear": "Syaro is a short girl with fluffy blonde hair covering her ears and straightened bangs worn with a thin black headband accent by a bow. She has turquoise eyes shaped with an upward point and fair skin.  Her work uniform is a black and white maid-style dress with black frilly wrist cuffs, white over-the-knee socks and a frilled headdress with white lop-ear rabbit ears. Her school uniform consists of a black blouse with a white blazer, a white and grey plaid skirt and matching plaid tie.",
         "Personality": "Syaro is a sensitive and bashful girl who has insecurities when it comes to her image. She is easily flustered and worries that her friends think she is a rich and sophisticated lady when in actuality she is a poor girl living in a humble home- but with fancy interests and hobbies. She is kind and somewhat withdrawn, but she can be sarcastic and blunt at times. She is quite jumpy and easily frightened, for example, when her friends tell ghost stories she covers her ears because she doesn't want to hear them, and she also has leporiphobia due to her not being able to walk home from school because a small wild rabbit was standing in her path and feared that it would attack her.  Syaro becomes very hyper and playful when under the influence of caffeine. She also admires Rize and has a crush on her, and shows a very respectful side towards her."
     },
@@ -97,7 +97,7 @@
         "haircolor": "Red",
         "eyecolor": "Red",
         "height": "145cm",
-        "blood": "-",
+        "blood": "A",
         "appear": "Megumi has medium-length light red hair pulled into curled loose ringlets, called tornadoes, at the bottom of her head held with white frilly ornaments. Her bangs are parted on the side, with most of them facing the right. Her dark pink eyes have a fleck of amber. For school she wears a white and navy sailor-style uniform. When helping at Rabbit House she borrows Cocoa's uniform, or she is shown to have her own salmon pink variant",
         "Personality": "Megumi is gentle and friendly with a light personality. She is sweet and always in a good mood, but she is genuinely shy about doing things before others. Although she doesn't show it off often, she is a talented ballet dancer and is noted for being really graceful."
     },
@@ -114,25 +114,25 @@
         "haircolor": "Blue",
         "eyecolor": "Yellow",
         "height": "140cm",
-        "blood": "-",
-        "appear": "1",
-        "Personality": "1"
+        "blood": "O",
+        "appear": "Maya has short choppy dark indigo hair with a tiny cowlick at the center of her head. Her bangs rest at the center of her forehead and appear uneven in length. She has fair skin and gold eyes, and at times a fanged tooth can be visible. For school she wears a white and navy sailor-style uniform. When helping at Rabbit House she borrows Rize's uniform, or has a sky blue variation.",
+        "Personality": "Maya is the excitable and mischievous friend of Chino and Megumi. Like Cocoa, she is energetic, and tries reaching for goals that may or may not be out of reach, and she is usually in a perky mood. She admires Rize for her cool attitude and fast-thinking, and while she is loving towards her friends she can show a blunt side with them. At home she's kind of lazy, usually relying on her big brother to do things for her. Even though she often acts like a \"fool\" it is said that she is actually very inquisitive and has very good grades. "
     },
     "tippy":{
-        "title": "Hoto Kokoa",
+        "title": "Tippy Golden Flowery Orange Pekoe",
         "color": "0xffd6e7",
         "url": "https://gochiusa.fandom.com/wiki/Cocoa_Hoto",
         "thmb": "https://static.wikia.nocookie.net/gochiusa/images/8/82/Cocoa-gud-jobu.png/revision/latest/scale-to-width-down/619?cb=20171021154859",
-        "name-kanji": "保登　心愛",
-        "name-roman": "Hoto Kokoa",
-        "gender": "Female",
+        "name-kanji": "ティッピー",
+        "name-roman": "Tippi",
+        "gender": "Male (spirit) Female (body)",
         "age": "?",
-        "bday": "April 10th",
-        "haircolor": "Orange",
+        "bday": "?",
+        "haircolor": "white (fur)",
         "eyecolor": "Purple",
-        "height": "154cm",
+        "height": "-",
         "blood": "-",
-        "appear": "",
-        "Personality": ""
+        "appear": "Tippy is an angora rabbit. She is female, although her body is inhabited by the soul and conscience of Chino's grandfather. ",
+        "Personality": "Tippy acts as a little companion for Chino and her friends. She has the personality of Chino's grandfather and his memories, meaning he's kept skills he had when he was alive, to the extent of what his rabbit-vessel can handle, like giving life advice at needed moments. Despite having the soul of an old person, Tippy acts childishly at times."
     }
 }
