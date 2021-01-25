@@ -78,6 +78,18 @@ async def about(ctx, args):
     await ctx.send(embed=embed)
 
 
+@bot.command()
+async def hentai(ctx, args):
+    # name = args.display_name
+    user = await bot.fetch_user(args[3:-1])
+    name = user.display_name
+    if (name == str(bot.user)[:-5]):
+        await ctx.send('no')
+        return
+    await ctx.send('{}、ヘンタイ…\n{}, you pervert...'.format(name, name))
+    await ctx.send(file=discord.File('hentai.jpg'))
+
+
 # VC Commands
 class VCC(commands.Cog):
     """cog desc"""
