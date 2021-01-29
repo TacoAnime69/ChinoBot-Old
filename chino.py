@@ -13,10 +13,47 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 # Set CMD Prefix
 bot = commands.Bot(command_prefix='$')
 
+ROLES = ['cocoa', 'chino', 'rize', 'chiya', 'syaro',
+         'maya', 'megu', 'aoyama', 'tippy']
+
 
 @bot.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(bot))
+
+
+@bot.command()
+async def giveme(ctx, *args):
+    # await ctx.send(args)
+    if not len(args) > 0:
+        await ctx.send('Please provide at least one character for a role. I.e. `$giveme chino`')
+        return
+    for role in args:
+        if str(role).lower() not in ROLES:
+            await ctx.send('ごめんなさい、{}がありません。\nSorry, {} does not exist as a role.'.format(role, role))
+            continue
+        roll_name = str(role[0]).capitalize() + str(role[1:]).lower() + ' Fan'
+        member = ctx.message.author
+        s_role = discord.utils.get(member.guild.roles, name=roll_name)
+        await member.add_roles(s_role)
+        await ctx.send('Added **{}** for {}'.format(roll_name, str(ctx.author)[:-5]))
+
+
+@bot.command()
+async def rmrole(ctx, *args):
+    # await ctx.send(args)
+    if not len(args) > 0:
+        await ctx.send('Please provide at least one character for a role. I.e. `$giveme chino`')
+        return
+    for role in args:
+        if str(role).lower() not in ROLES:
+            await ctx.send('ごめんなさい、{}がありません。\nSorry, {} does not exist as a role.'.format(role, role))
+            continue
+        roll_name = str(role[0]).capitalize() + str(role[1:]).lower() + ' Fan'
+        member = ctx.message.author
+        s_role = discord.utils.get(member.guild.roles, name=roll_name)
+        await member.add_roles(s_role)
+        await ctx.send('Added **{}** for {}'.format(roll_name, str(ctx.author)[:-5]))
 
 
 # Text Commands
@@ -217,5 +254,6 @@ class ImageGenerator(commands.Cog):
 bot.add_cog(VCC())
 bot.add_cog(ImageGenerator())
 bot.add_cog(TextComs())
+# bot.add_cog(ServComs())
 
 bot.run(TOKEN)
