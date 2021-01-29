@@ -43,7 +43,7 @@ async def giveme(ctx, *args):
 async def rmrole(ctx, *args):
     # await ctx.send(args)
     if not len(args) > 0:
-        await ctx.send('Please provide at least one character for a role. I.e. `$giveme chino`')
+        await ctx.send('Please provide at least one character for a role. I.e. `$rmrole chino`')
         return
     for role in args:
         if str(role).lower() not in ROLES:
@@ -52,8 +52,11 @@ async def rmrole(ctx, *args):
         roll_name = str(role[0]).capitalize() + str(role[1:]).lower() + ' Fan'
         member = ctx.message.author
         s_role = discord.utils.get(member.guild.roles, name=roll_name)
-        await member.add_roles(s_role)
-        await ctx.send('Added **{}** for {}'.format(roll_name, str(ctx.author)[:-5]))
+        try:
+            await member.remove_roles(s_role)
+            await ctx.send('Removed **{}** for {}'.format(roll_name, str(ctx.author)[:-5]))
+        except discord.Forbidden:
+            await ctx.send('Missing permissions')
 
 
 # Text Commands
