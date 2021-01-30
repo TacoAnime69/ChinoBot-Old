@@ -68,6 +68,11 @@ class TextComs(commands.Cog):
     async def hello(self, ctx):
         name = str(ctx.author)[:-5]
         await ctx.send('こんにちは！{}さん (≧▽≦)/\nHello! {}~'.format(name, name))
+    
+    @commands.command()
+    async def gm(self, ctx):
+        name = str(ctx.author)[:-5]
+        await ctx.send('おはようございます、{}さん (≧▽≦)/\nGood morning! {}~'.format(name, name))
 
     @commands.command()
     async def gn(self, ctx):
