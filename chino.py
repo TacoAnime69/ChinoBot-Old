@@ -14,7 +14,7 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 bot = commands.Bot(command_prefix='$')
 
 ROLES = ['cocoa', 'chino', 'rize', 'chiya', 'syaro',
-         'maya', 'megu', 'aoyama', 'tippy', 'fuyu']
+         'maya', 'megu', 'aoyama', 'tippy', 'fuyu', 'mocha']
 
 
 @bot.event
@@ -253,6 +253,13 @@ class ImageGenerator(commands.Cog):
     @commands.command()
     async def tippy(self, ctx):
         path = os.path.join('Pictures', 'tippy')
+        files = os.listdir(path)
+        choice = random.choice(files)
+        await ctx.send(file=discord.File(os.path.join(path, choice)))
+
+    @commands.command()
+    async def mocha(self, ctx):
+        path = os.path.join('Pictures', 'mocha')
         files = os.listdir(path)
         choice = random.choice(files)
         await ctx.send(file=discord.File(os.path.join(path, choice)))
