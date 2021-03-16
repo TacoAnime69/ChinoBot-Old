@@ -14,7 +14,8 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 bot = commands.Bot(command_prefix='$')
 
 ROLES = ['cocoa', 'chino', 'rize', 'chiya', 'syaro',
-         'maya', 'megu', 'aoyama', 'tippy', 'fuyu', 'mocha']
+         'maya', 'megu', 'aoyama', 'tippy', 'fuyu',
+         'mocha', 'rin', 'yura', 'elu', 'natsume']
 
 
 @bot.event
